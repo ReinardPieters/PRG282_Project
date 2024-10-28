@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PRG282Project.BusinessProcess;
+using PRG282Project.DataHandler;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,6 +19,14 @@ namespace PRG282Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+
+            UserManager userManager = new UserManager();
+
+            List<User> users = userManager.LoadUsers();
+            foreach (var user in users)
+            {
+                Console.WriteLine($"Username: {user.Username}, PasswordHash: {user.PasswordHash}");
+            }
         }
     }
 }

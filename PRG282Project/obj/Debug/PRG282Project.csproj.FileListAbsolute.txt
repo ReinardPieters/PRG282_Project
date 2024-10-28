@@ -1,0 +1,13 @@
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\bin\Debug\PRG282Project.exe.config
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\bin\Debug\PRG282Project.exe
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\bin\Debug\PRG282Project.pdb
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.csproj.AssemblyReference.cache
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.Form1.resources
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.Properties.Resources.resources
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.csproj.GenerateResource.cache
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.csproj.CoreCompileInputs.cache
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.exe
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.pdb
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\bin\Debug\Newtonsoft.Json.dll
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\bin\Debug\Newtonsoft.Json.xml
+C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\obj\Debug\PRG282Pr.CD50EBA7.Up2Date

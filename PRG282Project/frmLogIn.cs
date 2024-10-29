@@ -13,9 +13,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace PRG282Project
 {
-    public partial class Form1 : Form
+    public partial class frmLogIn : Form
     {
-        public Form1()
+        public frmLogIn()
         {
             InitializeComponent();
             txtUsername.TextChanged += TextBoxes_TextChanged;

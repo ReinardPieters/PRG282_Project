@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
-
+using PRG282Project.Presentation;
+using System.Threading;
 namespace PRG282Project
 {
     public partial class frmLogIn : Form
@@ -47,6 +48,9 @@ namespace PRG282Project
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Proceed with application logic for logged-in users
+                frmMain main = new frmMain();
+                main.Show();
+                this.Hide();
             }
             else
             {
@@ -70,6 +74,12 @@ namespace PRG282Project
             {
                 MessageBox.Show(ex.Message, "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Good bye","See you soon :)");
+            Application.Exit();
         }
     }
 }

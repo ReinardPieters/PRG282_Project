@@ -24,3 +24,4 @@ C:\Users\reina\OneDrive\Desktop\WPR281\WPR281_Assignment\PRG282_Project\PRG282Pr
 C:\Users\reina\OneDrive\Desktop\WPR281\WPR281_Assignment\PRG282_Project\PRG282Project\obj\Debug\PRG282Pr.CD50EBA7.Up2Date
 C:\Users\reina\OneDrive\Desktop\WPR281\WPR281_Assignment\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.exe
 C:\Users\reina\OneDrive\Desktop\WPR281\WPR281_Assignment\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.pdb
+C:\Users\reina\OneDrive\Desktop\WPR281\WPR281_Assignment\PRG282_Project\PRG282Project\obj\Debug\PRG282Project.Presentation.frmMain.resources

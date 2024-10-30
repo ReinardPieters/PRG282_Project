@@ -81,6 +81,7 @@
             this.btnViewAll.TabIndex = 5;
             this.btnViewAll.Text = "View All Students";
             this.btnViewAll.UseVisualStyleBackColor = true;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // btnUpdate
             // 
@@ -154,7 +155,6 @@
             this.Controls.Add(this.lblAverageAge);
             this.Name = "frmMain";
             this.Text = "Student Management System";
-            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

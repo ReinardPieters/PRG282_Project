@@ -27,6 +27,7 @@ namespace PRG282Project
             {
               
                 btnLogin.Enabled = !string.IsNullOrWhiteSpace(txtPassword.Text) && !string.IsNullOrWhiteSpace(txtUsername.Text);
+                txtPassword.PasswordChar = '*';
             }
         }
 
@@ -47,7 +48,6 @@ namespace PRG282Project
             if (isValidUser)
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Proceed with application logic for logged-in users
                 frmMain main = new frmMain();
                 main.Show();
                 this.Hide();

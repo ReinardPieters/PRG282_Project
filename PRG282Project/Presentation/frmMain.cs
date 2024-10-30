@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace PRG282Project.Presentation
         {
             
             InitializeComponent();
-            string filePath = @"C:\Users\reina\OneDrive\Desktop\PRG282_Project\PRG282_Project\PRG282Project\students.txt";
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "students.txt");
             studentManager = new StudentManager(filePath);
         }
 

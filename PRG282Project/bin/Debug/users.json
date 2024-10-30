@@ -1,14 +1,6 @@
 [
   {
-    "Username": "es",
-    "PasswordHash": "A6xnQhbz4Vx2HuGl4lXwZ5U2I8iziLRFnhP5eNfIRvQ="
-  },
-  {
-    "Username": "",
-    "PasswordHash": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-  },
-  {
-    "Username": "2",
-    "PasswordHash": "1HNeOiZeFu7gP1lxi5tdAwGcB9i2xR+Q2jpmbuwTqzU="
+    "Username": "Test",
+    "PasswordHash": "Uy6qvZV0iA2/drm4zACDLCCm7BE9aCKZVQ16bg80XiU="
   }
 ]

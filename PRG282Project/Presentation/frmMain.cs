@@ -59,5 +59,11 @@ namespace PRG282Project.Presentation
 
         }
 
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            var result = studentManager.getAverageMarkAndCount();
+            lblAverageAge.Text = $"Average Age: {result.average}";
+            lblTotalStudents.Text = $"Total students: {result.count}";
+        }
     }
 }

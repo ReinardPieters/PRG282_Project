@@ -25,6 +25,20 @@ namespace PRG282Project.BusinessProcess
                 return dataHandler.LoadStudents();
             }
 
+            public (int count,float average) getAverageMarkAndCount()
+            {
+                int totalAge = 0;
+                int count = 0;
+                foreach (Student student in GetStudents())
+                {
+                    count++;
+                    totalAge = totalAge + student.Age;
+                }
+
+                float averageAge = count > 0 ? (float)Math.Round((float)totalAge / count, 2) : 0;
+                return (count, averageAge);
+
+            }
             public void UpdateStudent(int id, string name, int age, string course)
             {
                 try

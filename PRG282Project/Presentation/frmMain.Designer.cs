@@ -112,6 +112,7 @@
             this.btnGenerateReport.TabIndex = 8;
             this.btnGenerateReport.Text = "Generate Report";
             this.btnGenerateReport.UseVisualStyleBackColor = true;
+            this.btnGenerateReport.Click += new System.EventHandler(this.btnGenerateReport_Click);
             // 
             // dgvStudents
             // 
@@ -130,6 +131,7 @@
             this.lblTotalStudents.Size = new System.Drawing.Size(88, 13);
             this.lblTotalStudents.TabIndex = 10;
             this.lblTotalStudents.Text = "Total Students: 0";
+
             // 
             // lblAverageAge
             // 
@@ -139,6 +141,7 @@
             this.lblAverageAge.Size = new System.Drawing.Size(81, 13);
             this.lblAverageAge.TabIndex = 11;
             this.lblAverageAge.Text = "Average Age: 0";
+
             // 
             // frmMain
             // 

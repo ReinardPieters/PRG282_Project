@@ -16,6 +16,7 @@ namespace PRG282Project
 {
     public partial class frmLogIn : Form
     {
+        public string user;
         public frmLogIn()
         {
             InitializeComponent();
@@ -48,9 +49,11 @@ namespace PRG282Project
             if (isValidUser)
             {
                 MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                frmMain main = new frmMain();
+                user = enteredUsername;
+                frmMain main = new frmMain(user);
                 main.Show();
                 this.Hide();
+               
             }
             else
             {

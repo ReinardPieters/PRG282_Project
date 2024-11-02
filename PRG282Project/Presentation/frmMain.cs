@@ -16,13 +16,15 @@ namespace PRG282Project.Presentation
 {
     public partial class frmMain : Form
     {
+        public string CurrentUser { get;private  set; }
         private readonly StudentManager studentManager;
-        public frmMain()
+        public frmMain(string user)
         {
             
             InitializeComponent();
             string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "students.txt");
             studentManager = new StudentManager(filePath);
+            CurrentUser = user;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -67,7 +69,7 @@ namespace PRG282Project.Presentation
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            lblCurrentUser.Text += $" {CurrentUser}";
         }
 
         private void btnGenerateReport_Click(object sender, EventArgs e)

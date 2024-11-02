@@ -79,5 +79,17 @@ namespace PRG282Project.Presentation
             lblTotalStudents.Text = $"Total students: {result.count}";
         }
 
+        private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dgvStudents.Rows[e.RowIndex];
+                txtStudentID.Text = row.Cells[0].Value.ToString();
+                txtStudentName.Text = row.Cells[1].Value.ToString();
+                txtAge.Text = row.Cells[2].Value.ToString();
+                txtCourse.Text = row.Cells[3].Value.ToString();
+
+            }
+        }
     }
 }

@@ -129,6 +129,7 @@
             this.dgvStudents.RowHeadersWidth = 100;
             this.dgvStudents.Size = new System.Drawing.Size(758, 274);
             this.dgvStudents.TabIndex = 9;
+            this.dgvStudents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellClick);
             // 
             // lblTotalStudents
             // 

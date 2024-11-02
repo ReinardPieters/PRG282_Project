@@ -53,6 +53,17 @@ namespace PRG282Project.Presentation
             string course = txtCourse.Text;
 
             studentManager.UpdateStudent(ID, name, age, course);
+
+            try
+            {
+                List<Student> students = studentManager.GetStudents();
+                dgvStudents.DataSource = students;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading students: {ex.Message}");
+            }
+
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -65,5 +76,6 @@ namespace PRG282Project.Presentation
             lblAverageAge.Text = $"Average Age: {result.average}";
             lblTotalStudents.Text = $"Total students: {result.count}";
         }
+
     }
 }

@@ -46,5 +46,23 @@ namespace PRG282Project.DataHandler
             }
             return students;
         }
+
+        public void WriteStudents(List<Student> students)
+        {
+            if (!File.Exists(filePath))
+            {
+                throw new FileNotFoundException("Student file not found.");
+            }
+
+            List<string> details = new List<string>();
+
+            foreach (Student student in students)
+            {
+                details.Add(student.ToString());
+            }
+            
+            File.WriteAllLines(filePath, details);
+        }
+
     }
 }

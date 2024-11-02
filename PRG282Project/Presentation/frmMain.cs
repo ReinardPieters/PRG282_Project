@@ -44,5 +44,15 @@ namespace PRG282Project.Presentation
                 MessageBox.Show($"Error loading students: {ex.Message}");
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(txtStudentID.Text);
+            int age = int.Parse(txtAge.Text);
+            string name = txtStudentName.Text;
+            string course = txtCourse.Text;
+
+            studentManager.UpdateStudent(ID, name, age, course);
+        }
     }
 }

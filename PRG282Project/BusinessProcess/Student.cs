@@ -12,5 +12,11 @@ namespace PRG282Project.BusinessProcess
         public string Name { get; set; }
         public int Age { get; set; }
         public string Course { get; set; }
+
+        public override string ToString()
+        {
+            return $"{StudentID},{Name},{Age},{Course}";
+        }
     }
+
 }

@@ -1,1 +1,2 @@
-StudentID,Name,Age,Course;
+1,Markus,20,BCOMP
+2,Reinard,22,BCOMP

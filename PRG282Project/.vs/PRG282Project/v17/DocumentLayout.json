@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -90,8 +90,7 @@
               "RelativeToolTip": "DataHandler\\StudentsDatahandler.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:38:06.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:38:06.65Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "RelativeToolTip": "BusinessProcess\\StudentManager.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAmwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:38:06.698Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:38:06.698Z"
             },
             {
               "$type": "Document",
@@ -116,8 +114,7 @@
               "RelativeToolTip": "BusinessProcess\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:38:06.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:38:06.699Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "RelativeToolTip": "Presentation\\frmMain.Designer.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAvwKYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:38:06.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:38:06.7Z"
             },
             {
               "$type": "Document",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "Presentation\\frmMain.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAewFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T14:38:06.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T14:38:06.701Z"
             }
           ]
         }

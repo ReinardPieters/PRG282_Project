@@ -30,10 +30,14 @@
             this.lblTotalStudents = new System.Windows.Forms.Label();
             this.lblAverageAge = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnAddStudent = new System.Windows.Forms.Button();
             this.lblCurrentUser = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -51,35 +55,31 @@
             // 
             // txtStudentID
             // 
-            this.txtStudentID.Location = new System.Drawing.Point(54, 22);
+            this.txtStudentID.Location = new System.Drawing.Point(54, 43);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(222, 20);
             this.txtStudentID.TabIndex = 1;
-            this.txtStudentID.Text = "Enter Student ID";
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(308, 65);
+            this.txtStudentName.Location = new System.Drawing.Point(308, 86);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(222, 20);
             this.txtStudentName.TabIndex = 2;
-            this.txtStudentName.Text = "Enter Student Name";
             // 
             // txtAge
             // 
-            this.txtAge.Location = new System.Drawing.Point(308, 22);
+            this.txtAge.Location = new System.Drawing.Point(308, 43);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(222, 20);
             this.txtAge.TabIndex = 3;
-            this.txtAge.Text = "Enter Age";
             // 
             // txtCourse
             // 
-            this.txtCourse.Location = new System.Drawing.Point(54, 65);
+            this.txtCourse.Location = new System.Drawing.Point(54, 86);
             this.txtCourse.Name = "txtCourse";
             this.txtCourse.Size = new System.Drawing.Size(222, 20);
             this.txtCourse.TabIndex = 4;
-            this.txtCourse.Text = "Enter Course";
             // 
             // btnViewAll
             // 
@@ -151,6 +151,10 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnAddStudent);
             this.groupBox1.Controls.Add(this.txtStudentID);
             this.groupBox1.Controls.Add(this.txtStudentName);
@@ -164,6 +168,15 @@
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit Students";
+            // 
+            // btnAddStudent
+            // 
+            this.btnAddStudent.Location = new System.Drawing.Point(54, 113);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(102, 21);
+            this.btnAddStudent.TabIndex = 8;
+            this.btnAddStudent.Text = "Add Student";
+            this.btnAddStudent.UseVisualStyleBackColor = true;
             // 
             // btnSearch
             // 
@@ -186,15 +199,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Report";
             // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.Location = new System.Drawing.Point(54, 113);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(102, 21);
-            this.btnAddStudent.TabIndex = 8;
-            this.btnAddStudent.Text = "Add Student";
-            this.btnAddStudent.UseVisualStyleBackColor = true;
-            // 
             // lblCurrentUser
             // 
             this.lblCurrentUser.AutoSize = true;
@@ -203,6 +207,42 @@
             this.lblCurrentUser.Size = new System.Drawing.Size(116, 13);
             this.lblCurrentUser.TabIndex = 15;
             this.lblCurrentUser.Text = "Currently signed in as : ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(61, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Course";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(61, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Student ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(305, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Age";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(305, 72);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Student Name";
             // 
             // frmMain
             // 
@@ -248,5 +288,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Label lblCurrentUser;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

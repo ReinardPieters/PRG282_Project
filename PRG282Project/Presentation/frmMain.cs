@@ -29,7 +29,7 @@ namespace PRG282Project.Presentation
         {
             frmLogIn login = new frmLogIn();
             login.Show();
-            this.Hide();
+            Hide();
         }
 
         private void btnViewAll_Click(object sender, EventArgs e)
@@ -45,7 +45,6 @@ namespace PRG282Project.Presentation
             }
         }
 
-<<<<<<< Updated upstream
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             int ID = int.Parse(txtStudentID.Text);
@@ -54,11 +53,11 @@ namespace PRG282Project.Presentation
             string course = txtCourse.Text;
 
             studentManager.UpdateStudent(ID, name, age, course);
-=======
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
 
->>>>>>> Stashed changes
         }
+
     }
 }

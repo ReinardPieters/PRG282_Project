@@ -23,10 +23,6 @@ namespace PRG282Project
             UserManager userManager = new UserManager();
 
             List<User> users = userManager.LoadUsers();
-            foreach (var user in users)
-            {
-                Console.WriteLine($"Username: {user.Username}, PasswordHash: {user.PasswordHash}");
-            }
         }
     }
 }

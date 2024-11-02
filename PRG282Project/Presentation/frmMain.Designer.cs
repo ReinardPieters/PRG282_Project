@@ -158,6 +158,7 @@
             this.Controls.Add(this.lblAverageAge);
             this.Name = "frmMain";
             this.Text = "Student Management System";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

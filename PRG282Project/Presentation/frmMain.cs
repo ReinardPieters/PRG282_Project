@@ -74,9 +74,8 @@ namespace PRG282Project.Presentation
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
-            var result = studentManager.getAverageMarkAndCount();
-            lblAverageAge.Text = $"Average Age: {result.average}";
-            lblTotalStudents.Text = $"Total students: {result.count}";
+            lblAverageAge.Text = $"Average Age: {studentManager.getAverageMark()}";
+            lblTotalStudents.Text = $"Total students: {studentManager.getTotalStudents()}";
         }
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)

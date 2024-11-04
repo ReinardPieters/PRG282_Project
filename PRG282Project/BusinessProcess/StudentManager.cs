@@ -1,11 +1,6 @@
 ﻿using PRG282Project.DataHandler;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using System.Xml.Linq;
 using System.Windows.Forms;
 
 namespace PRG282Project.BusinessProcess
@@ -25,7 +20,7 @@ namespace PRG282Project.BusinessProcess
                 return dataHandler.LoadStudents();
             }
 
-            public (int count,float average) getAverageMarkAndCount()
+            public float getAverageMark()
             {
                 int totalAge = 0;
                 int count = 0;
@@ -36,8 +31,12 @@ namespace PRG282Project.BusinessProcess
                 }
 
                 float averageAge = count > 0 ? (float)Math.Round((float)totalAge / count, 2) : 0;
-                return (count, averageAge);
+                return (averageAge);
 
+            }
+             public int getTotalStudents() 
+            {
+            return GetStudents().Count; 
             }
             public void UpdateStudent(int id, string name, int age, string course)
             {

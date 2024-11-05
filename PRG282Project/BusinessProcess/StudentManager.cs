@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Linq;
 
 namespace PRG282Project.BusinessProcess
 {
@@ -70,7 +71,31 @@ namespace PRG282Project.BusinessProcess
                     {
                         MessageBox.Show("Could not update student information");
                     }
+            }
+        public void DeleteStudent(int id)
+        {
+            try
+            {
+                List<Student> students = GetStudents();
+                Student deleteStudent = students.FirstOrDefault(student => student.StudentID == id);
+                if(deleteStudent != null)
+                {
+                    students.Remove(deleteStudent);
+                    dataHandler.WriteStudents(students);
+                    MessageBox.Show("Student was deleted succesfully!");
                 }
+                else
+                {
+                    MessageBox.Show("Student with that ID not found!");
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error could not delete that student!");
+            }
+        }
+
+
         
     }
 

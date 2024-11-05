@@ -90,5 +90,22 @@ namespace PRG282Project.Presentation
 
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int ID = int.Parse(txtStudentID.Text);
+
+                studentManager.DeleteStudent(ID);
+
+                List<Student> students = studentManager.GetStudents();
+                dgvStudents.DataSource = students;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error deleting student:{ex.Message}");
+            }
+        }
     }
 }

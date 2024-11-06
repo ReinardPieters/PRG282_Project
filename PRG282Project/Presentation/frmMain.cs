@@ -96,11 +96,12 @@ namespace PRG282Project.Presentation
             try
             {
                 int ID = int.Parse(txtStudentID.Text);
-
+                
                 studentManager.DeleteStudent(ID);
 
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;
+               
             }
             catch(Exception ex)
             {

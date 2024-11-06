@@ -37,7 +37,7 @@ namespace PRG282Project.BusinessProcess
             }
              public int getTotalStudents() 
             {
-            return GetStudents().Count; 
+                return GetStudents().Count; 
             }
             public void UpdateStudent(int id, string name, int age, string course)
             {
@@ -78,6 +78,7 @@ namespace PRG282Project.BusinessProcess
             {
                 List<Student> students = GetStudents();
                 Student deleteStudent = students.FirstOrDefault(student => student.StudentID == id);
+
                 if(deleteStudent != null)
                 {
                     students.Remove(deleteStudent);

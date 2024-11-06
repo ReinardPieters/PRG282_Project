@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\",
+  "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\wpr281\\wpr281_assignment\\prg282_project\\prg282project\\presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,41 +42,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
-              "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs [Design]",
-              "RelativeToolTip": "Presentation\\frmMain.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "frmMain.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.Designer.cs",
+              "RelativeDocumentMoniker": "Presentation\\frmMain.Designer.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.Designer.cs",
+              "RelativeToolTip": "Presentation\\frmMain.Designer.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAYwHAAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:37:18.221Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-06T11:20:00.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
               "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
-              "RelativeToolTip": "Presentation\\frmMain.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwEcAAAA1AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs [Design]",
+              "RelativeToolTip": "Presentation\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:33:40.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T15:37:18.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
+              "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
+              "RelativeToolTip": "Presentation\\frmMain.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAmwGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T15:33:40.129Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "StudentManager.cs",
-              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
+              "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeDocumentMoniker": "BusinessProcess\\StudentManager.cs",
-              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
+              "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\WPR281\\WPR281_Assignment\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeToolTip": "BusinessProcess\\StudentManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAjwE4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:32:54.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T15:32:54.987Z"
             }
           ]
         }

@@ -94,6 +94,32 @@ namespace PRG282Project.BusinessProcess
                 MessageBox.Show("Error could not delete that student!");
             }
         }
+        public void InsertStudent(int id, string name, int age, string course)
+        {
+            try
+            {
+                List<Student> students = GetStudents();
+                if(students.Any(student => student.StudentID== id))
+                {
+                    MessageBox.Show("The Student with that ID already exist!");
+                    return;
+                }
+                Student newstudent = new Student
+                {
+                    StudentID = id,
+                    Name = name,
+                    Age = age,
+                    Course = course
+                };
+                students.Add(newstudent);
+                dataHandler.WriteStudents(students);
+                MessageBox.Show("New Student was added successfully!");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error, could not add the student!");
+            }
+        }
 
 
         

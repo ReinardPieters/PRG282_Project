@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PRG282Project.BusinessProcess;
+using PRG282Project.DataHandler;
 using PRG282Project.Presentation;
 
 namespace PRG282Project.Presentation
@@ -55,7 +56,7 @@ namespace PRG282Project.Presentation
             string course = txtCourse.Text;
 
             studentManager.UpdateStudent(ID, name, age, course);
-
+            Log log = new Log(CurrentUser, $"Updated student ID: {ID} @ ");
             try
             {
                 List<Student> students = studentManager.GetStudents();
@@ -98,6 +99,7 @@ namespace PRG282Project.Presentation
                 int ID = int.Parse(txtStudentID.Text);
                 
                 studentManager.DeleteStudent(ID);
+                Log log = new Log(CurrentUser, $"Deleted student ID: {ID} @ ");
 
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;

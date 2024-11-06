@@ -3,15 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
+using System.IO;
 
 namespace PRG282Project.BusinessProcess
 {
     internal class StudentManager
     {
-  
-            private StudentsDatahandler dataHandler;
 
-            public StudentManager(string filePath)
+        private StudentsDatahandler dataHandler;
+        public StudentManager(string filePath)
             {
                 dataHandler = new StudentsDatahandler(filePath);
             }
@@ -65,6 +65,7 @@ namespace PRG282Project.BusinessProcess
                     {
                         dataHandler.WriteStudents(students);
                         MessageBox.Show("Student information succesfully updated");
+                        
                     }
                 }
                     catch (Exception ex)
@@ -81,6 +82,7 @@ namespace PRG282Project.BusinessProcess
 
                 if(deleteStudent != null)
                 {
+                    
                     students.Remove(deleteStudent);
                     dataHandler.WriteStudents(students);
                     MessageBox.Show("Student was deleted succesfully!");

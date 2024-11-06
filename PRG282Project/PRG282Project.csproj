@@ -52,6 +52,7 @@
     <Compile Include="BusinessProcess\Student.cs" />
     <Compile Include="BusinessProcess\StudentManager.cs" />
     <Compile Include="BusinessProcess\UserManager.cs" />
+    <Compile Include="DataHandler\Log.cs" />
     <Compile Include="DataHandler\StudentsDatahandler.cs" />
     <Compile Include="DataHandler\User.cs" />
     <Compile Include="Presentation\frmLogIn.cs">

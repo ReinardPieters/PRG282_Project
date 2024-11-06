@@ -110,5 +110,24 @@ namespace PRG282Project.Presentation
                 MessageBox.Show($"Error deleting student:{ex.Message}");
             }
         }
+
+        private void btnAddStudent_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int ID = int.Parse(txtStudentID.Text);
+                string Name = txtStudentName.Text;
+                int age = int.Parse(txtAge.Text);
+                string course = txtCourse.Text;
+
+                studentManager.InsertStudent(ID, Name, age, course);
+                List<Student> students = studentManager.GetStudents();
+                dgvStudents.DataSource = students;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error inserting student:{ex.Message}");
+            }
+        }
     }
 }

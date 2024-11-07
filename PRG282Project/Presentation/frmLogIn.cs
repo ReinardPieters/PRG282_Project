@@ -27,8 +27,9 @@ namespace PRG282Project
 
             void TextBoxes_TextChanged(object sender, EventArgs e)
             {
-              
+                btnSignup.Enabled = !string.IsNullOrWhiteSpace(txtPassword.Text) && !string.IsNullOrWhiteSpace(txtUsername.Text);
                 btnLogin.Enabled = !string.IsNullOrWhiteSpace(txtPassword.Text) && !string.IsNullOrWhiteSpace(txtUsername.Text);
+                
                 txtPassword.PasswordChar = '*';
             }
         }

@@ -82,6 +82,7 @@
             // 
             // btnSignup
             // 
+            this.btnSignup.Enabled = false;
             this.btnSignup.Location = new System.Drawing.Point(612, 340);
             this.btnSignup.Name = "btnSignup";
             this.btnSignup.Size = new System.Drawing.Size(129, 46);
@@ -93,7 +94,7 @@
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(535, 391);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(113, 50);
             this.btnClose.TabIndex = 6;

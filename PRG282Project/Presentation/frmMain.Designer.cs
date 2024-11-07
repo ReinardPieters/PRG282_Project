@@ -215,6 +215,7 @@
             this.btnAddStudent.TabIndex = 8;
             this.btnAddStudent.Text = "Add Student";
             this.btnAddStudent.UseVisualStyleBackColor = true;
+            this.btnAddStudent.Click += new System.EventHandler(this.btnAddStudent_Click);
             // 
             // btnSearch
             // 

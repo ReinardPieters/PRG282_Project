@@ -12,67 +12,85 @@ namespace PRG282Project.BusinessProcess
 
         private StudentsDatahandler dataHandler;
         public StudentManager(string filePath)
-            {
-                dataHandler = new StudentsDatahandler(filePath);
-            }
+        {
+            dataHandler = new StudentsDatahandler(filePath);
+        }
+        public List<Student> SearchID(int ID)
+        {
+            List<Student> allStudents = GetStudents();
 
-            public List<Student> GetStudents()
-            {
-                return dataHandler.LoadStudents();
-            }
+            List<Student> searchedStudents = allStudents.Where(Student => Student.StudentID == ID).ToList();
 
-            public float getAverageMark()
-            {
-                int totalAge = 0;
-                int count = 0;
-                foreach (Student student in GetStudents())
-                {
+            return searchedStudents;
+
+        }
+        public List<Student> SearchName(string name) 
+        {
+            List<Student> allStudents = GetStudents();
+
+            List<Student> searchedStudents = allStudents
+            .Where(student => student.Name.Contains(name))
+            .ToList();
+
+            return searchedStudents;
+        }
+
+        public List<Student> GetStudents()
+        {
+            return dataHandler.LoadStudents();
+        }
+
+        public float getAverageMark()
+        {
+            int totalAge = 0;
+            int count = 0;
+            foreach (Student student in GetStudents())
+                { 
                     count++;
                     totalAge = totalAge + student.Age;
                 }
 
-                float averageAge = count > 0 ? (float)Math.Round((float)totalAge / count, 2) : 0;
-                return (averageAge);
+            float averageAge = count > 0 ? (float)Math.Round((float)totalAge / count, 2) : 0;
+            return (averageAge);
 
-            }
-             public int getTotalStudents() 
+        }
+        public int getTotalStudents() 
+        {
+            return GetStudents().Count; 
+        }
+        public void UpdateStudent(int id, string name, int age, string course)
+        {
+            try
             {
-                return GetStudents().Count; 
-            }
-            public void UpdateStudent(int id, string name, int age, string course)
-            {
-                try
+                List<Student> students = GetStudents();
+                bool found = false;
+
+                foreach (Student student in students)
                 {
-                    List<Student> students = GetStudents();
-                    bool found = false;
-
-                    foreach (Student student in students)
-                    {
-                        if (student.StudentID == id)
-                        {
-                            student.Name = name;
-                            student.Course = course;
-                            student.Age = age;
-                            found = true;
-                            break;
-                        }
-                    }
-                    if (!found)
-                    {
-                        MessageBox.Show("Student ID does not exist");
-                    }
-                        else
-                    {
-                        dataHandler.WriteStudents(students);
-                        MessageBox.Show("Student information succesfully updated");
-                        
+                    if (student.StudentID == id)
+                     {
+                        student.Name = name;
+                        student.Course = course;
+                        student.Age = age;
+                        found = true;
+                        break;
                     }
                 }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Could not update student information");
-                    }
+                if (!found)
+                {
+                    MessageBox.Show("Student ID does not exist");
+                } else
+                {
+                    dataHandler.WriteStudents(students);
+                    MessageBox.Show("Student information succesfully updated");
+                        
+                }
+            } 
+            catch (Exception ex)
+            {
+                MessageBox.Show("Could not update student information");
             }
+        }
         public void DeleteStudent(int id)
         {
             try
@@ -123,9 +141,5 @@ namespace PRG282Project.BusinessProcess
                 MessageBox.Show("Error, could not add the student!");
             }
         }
-
-
-        
     }
-
 }

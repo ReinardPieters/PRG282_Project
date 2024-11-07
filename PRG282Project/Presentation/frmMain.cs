@@ -50,21 +50,25 @@ namespace PRG282Project.Presentation
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(txtStudentID.Text);
-            int age = int.Parse(txtAge.Text);
             string name = txtStudentName.Text;
             string course = txtCourse.Text;
 
-            studentManager.UpdateStudent(ID, name, age, course);
-            Log log = new Log(CurrentUser, $"Updated student ID: {ID} @ ");
             try
             {
+                int ID = int.Parse(txtStudentID.Text);
+                int age = int.Parse(txtAge.Text);
+
+
+                studentManager.UpdateStudent(ID, name, age, course);
+
+                Log log = new Log(CurrentUser, $"Updated student ID: {ID} @ ");
+
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error loading students: {ex.Message}");
+                MessageBox.Show($"Error updating: {ex.Message}");
             }
 
         }
@@ -99,6 +103,7 @@ namespace PRG282Project.Presentation
                 int ID = int.Parse(txtStudentID.Text);
                 
                 studentManager.DeleteStudent(ID);
+
                 Log log = new Log(CurrentUser, $"Deleted student ID: {ID} @ ");
 
                 List<Student> students = studentManager.GetStudents();
@@ -128,6 +133,49 @@ namespace PRG282Project.Presentation
             catch(Exception ex)
             {
                 MessageBox.Show($"Error inserting student:{ex.Message}");
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int category = cbCategory.SelectedIndex;
+                string detail = txtDetail.Text;
+
+                if (category == -1)
+                {
+                    MessageBox.Show("Please select a category to search");
+                }
+                else if (category == 0)
+                {
+                    List<Student> searchID = studentManager.SearchID(int.Parse(detail));
+                    if (searchID.Count > 0)
+                    {
+                        dgvStudents.DataSource = searchID;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No students found with the specified ID.");
+                    }
+                   
+                }
+                else if (category == 1)
+                {
+                    List<Student> searchName = studentManager.SearchName(detail);
+                    if (searchName.Count > 0)
+                    {
+                        dgvStudents.DataSource = searchName;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No students found with the specified Name.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

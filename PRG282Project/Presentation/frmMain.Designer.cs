@@ -38,16 +38,21 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblCurrentUser = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtDetail = new System.Windows.Forms.TextBox();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.lblDetail = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(695, 513);
+            this.btnLogout.Location = new System.Drawing.Point(695, 529);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.Size = new System.Drawing.Size(75, 29);
             this.btnLogout.TabIndex = 0;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -83,7 +88,7 @@
             // 
             // btnViewAll
             // 
-            this.btnViewAll.Location = new System.Drawing.Point(12, 71);
+            this.btnViewAll.Location = new System.Drawing.Point(65, 172);
             this.btnViewAll.Name = "btnViewAll";
             this.btnViewAll.Size = new System.Drawing.Size(100, 23);
             this.btnViewAll.TabIndex = 5;
@@ -164,9 +169,9 @@
             this.groupBox1.Controls.Add(this.txtCourse);
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.btnDelete);
-            this.groupBox1.Location = new System.Drawing.Point(141, 28);
+            this.groupBox1.Location = new System.Drawing.Point(221, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(629, 161);
+            this.groupBox1.Size = new System.Drawing.Size(549, 161);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit Students";
@@ -219,19 +224,20 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(12, 28);
+            this.btnSearch.Location = new System.Drawing.Point(6, 109);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 23);
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search Student";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblTotalStudents);
             this.groupBox2.Controls.Add(this.lblAverageAge);
             this.groupBox2.Controls.Add(this.btnGenerateReport);
-            this.groupBox2.Location = new System.Drawing.Point(12, 478);
+            this.groupBox2.Location = new System.Drawing.Point(12, 507);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(319, 69);
             this.groupBox2.TabIndex = 14;
@@ -241,11 +247,52 @@
             // lblCurrentUser
             // 
             this.lblCurrentUser.AutoSize = true;
-            this.lblCurrentUser.Location = new System.Drawing.Point(531, 518);
+            this.lblCurrentUser.Location = new System.Drawing.Point(526, 537);
             this.lblCurrentUser.Name = "lblCurrentUser";
             this.lblCurrentUser.Size = new System.Drawing.Size(116, 13);
             this.lblCurrentUser.TabIndex = 15;
             this.lblCurrentUser.Text = "Currently signed in as : ";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lblDetail);
+            this.groupBox3.Controls.Add(this.cbCategory);
+            this.groupBox3.Controls.Add(this.txtDetail);
+            this.groupBox3.Controls.Add(this.btnSearch);
+            this.groupBox3.Location = new System.Drawing.Point(12, 28);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(203, 138);
+            this.groupBox3.TabIndex = 16;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Search";
+            // 
+            // txtDetail
+            // 
+            this.txtDetail.Location = new System.Drawing.Point(6, 72);
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(146, 20);
+            this.txtDetail.TabIndex = 15;
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Items.AddRange(new object[] {
+            "StudentID",
+            "StudentName"});
+            this.cbCategory.Location = new System.Drawing.Point(6, 25);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(142, 21);
+            this.cbCategory.TabIndex = 16;
+            this.cbCategory.Text = "Select Category";
+            // 
+            // lblDetail
+            // 
+            this.lblDetail.AutoSize = true;
+            this.lblDetail.Location = new System.Drawing.Point(6, 56);
+            this.lblDetail.Name = "lblDetail";
+            this.lblDetail.Size = new System.Drawing.Size(40, 13);
+            this.lblDetail.TabIndex = 17;
+            this.lblDetail.Text = "Detail: ";
             // 
             // frmMain
             // 
@@ -254,11 +301,11 @@
             this.ClientSize = new System.Drawing.Size(817, 588);
             this.Controls.Add(this.lblCurrentUser);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnViewAll);
             this.Controls.Add(this.dgvStudents);
+            this.Controls.Add(this.groupBox3);
             this.Name = "frmMain";
             this.Text = "Student Management System";
             this.Load += new System.EventHandler(this.frmMain_Load);
@@ -267,6 +314,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +344,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txtDetail;
+        private System.Windows.Forms.ComboBox cbCategory;
+        private System.Windows.Forms.Label lblDetail;
     }
 }

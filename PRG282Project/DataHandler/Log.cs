@@ -18,7 +18,7 @@ namespace PRG282Project.DataHandler
             
             StreamWriter sw = new StreamWriter(fs);
 
-            sw.Write($"{user} : {alteration} {DateTime.Now}");
+            sw.WriteLine($"{user} : {alteration} {DateTime.Now}");
 
             sw.Close();
             fs.Close();

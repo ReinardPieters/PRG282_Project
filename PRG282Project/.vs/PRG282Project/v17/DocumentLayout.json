@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\reina\\onedrive\\desktop\\prg282_project\\prg282_project\\prg282project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\datahandler\\studentsdatahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,8 +66,7 @@
               "RelativeToolTip": "Presentation\\frmLogIn.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:17:19.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T15:17:19.347Z"
             },
             {
               "$type": "Document",
@@ -78,8 +77,7 @@
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmLogIn.cs [Design]",
               "RelativeToolTip": "Presentation\\frmLogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:17:17.733Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-06T15:17:17.733Z"
             },
             {
               "$type": "Document",
@@ -91,8 +89,7 @@
               "RelativeToolTip": "DataHandler\\StudentsDatahandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:09:18.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T15:09:18.463Z"
             },
             {
               "$type": "Document",
@@ -104,18 +101,17 @@
               "RelativeToolTip": "DataHandler\\Log.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:09:27.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-06T15:09:27.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "frmMain.Designer.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.Designer.cs",
               "RelativeDocumentMoniker": "Presentation\\frmMain.Designer.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.Designer.cs",
               "RelativeToolTip": "Presentation\\frmMain.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAB4BAAAAAAAAAADwvyQBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:20:00.417Z",
               "EditorCaption": ""
@@ -134,26 +130,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
               "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
               "RelativeToolTip": "Presentation\\frmMain.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAowKQAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwEQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T15:33:40.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "StudentManager.cs",
               "DocumentMoniker": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeDocumentMoniker": "BusinessProcess\\StudentManager.cs",
               "ToolTip": "C:\\Users\\reina\\OneDrive\\Desktop\\PRG282_Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeToolTip": "BusinessProcess\\StudentManager.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAmwI4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAcwHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T15:32:54.987Z",
               "EditorCaption": ""

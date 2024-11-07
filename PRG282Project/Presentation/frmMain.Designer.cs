@@ -284,6 +284,7 @@
             this.cbCategory.Size = new System.Drawing.Size(142, 21);
             this.cbCategory.TabIndex = 16;
             this.cbCategory.Text = "Select Category";
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // lblDetail
             // 

@@ -75,6 +75,7 @@ namespace PRG282Project.Presentation
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblCurrentUser.Text += $" {CurrentUser}";
+            lblDetail.Text = "Please select a category to seach first";
         }
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
@@ -176,6 +177,20 @@ namespace PRG282Project.Presentation
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+        private void cbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCategory.SelectedIndex == 0)
+            {
+                lblDetail.Text = "Enter ID of student: ";
+            } else if (cbCategory.SelectedIndex == 1) 
+            {
+                lblDetail.Text = "Please enter students name: ";
+            }
+            else
+            {
+                lblDetail.Text = "Please select a category to seach first";
             }
         }
     }

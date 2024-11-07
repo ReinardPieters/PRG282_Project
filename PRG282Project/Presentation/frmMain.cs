@@ -120,6 +120,7 @@ namespace PRG282Project.Presentation
                 int age = int.Parse(txtAge.Text);
                 string course = txtCourse.Text;
 
+                Log log = new Log(CurrentUser, $"Inserted student ID: {ID} @ ");
                 studentManager.InsertStudent(ID, Name, age, course);
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;

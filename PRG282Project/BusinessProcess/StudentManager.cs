@@ -64,6 +64,21 @@ namespace PRG282Project.BusinessProcess
             {
                 List<Student> students = GetStudents();
                 bool found = false;
+                bool nameOnlyLetters = name.All(char.IsLetter);
+                bool courseOnlyLetters = course.All(char.IsLetter);
+
+                if (id < 1)
+                {
+                    MessageBox.Show("ID cannot be 0 or negative. Please try again.");
+                    return;
+                }
+
+                if (!nameOnlyLetters || !courseOnlyLetters)
+                {
+                    MessageBox.Show("Name or course cannot contain special characters or numbers.");
+                    return;
+
+                }
 
                 foreach (Student student in students)
                 {
@@ -88,7 +103,7 @@ namespace PRG282Project.BusinessProcess
             } 
             catch (Exception ex)
             {
-                MessageBox.Show("Could not update student information");
+                MessageBox.Show(ex.Message);
             }
         }
         public void DeleteStudent(int id)

@@ -110,6 +110,11 @@ namespace PRG282Project.BusinessProcess
         {
             try
             {
+                if(id <= 0)
+                {
+                    MessageBox.Show("Please enter a valid and positive Student ID!");
+                    return;
+                }
                 List<Student> students = GetStudents();
                 Student deleteStudent = students.FirstOrDefault(student => student.StudentID == id);
 
@@ -134,6 +139,26 @@ namespace PRG282Project.BusinessProcess
         {
             try
             {
+                if(id <= 0)
+                {
+                    MessageBox.Show("Please enter a valid, positive Student ID!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(name))
+                {
+                    MessageBox.Show("Please enter a name that is valid!");
+                    return;
+                }
+                if (age <= 0)
+                {
+                    MessageBox.Show("Please enter a age that is valid!");
+                    return;
+                }
+                if (string.IsNullOrWhiteSpace(course))
+                {
+                    MessageBox.Show("Please enter a valid course!");
+                    return;
+                }
                 List<Student> students = GetStudents();
                 if(students.Any(student => student.StudentID== id))
                 {

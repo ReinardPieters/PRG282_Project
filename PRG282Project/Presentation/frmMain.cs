@@ -198,5 +198,11 @@ namespace PRG282Project.Presentation
         {
             dgvStudents.DataSource = studentManager.FilterCourse(cmbCourseFilter.SelectedItem.ToString());
         }
+
+        private void cmbAgeFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dgvStudents.DataSource = studentManager.FilterAge(cmbAgeFilter.SelectedIndex);
+
+        }
     }
 }

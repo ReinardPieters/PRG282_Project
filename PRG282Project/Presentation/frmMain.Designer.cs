@@ -45,6 +45,8 @@
             this.cmbCourseFilter = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.cmbAgeFilter = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -301,6 +303,7 @@
             // 
             // cmbCourseFilter
             // 
+            this.cmbCourseFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCourseFilter.FormattingEnabled = true;
             this.cmbCourseFilter.Items.AddRange(new object[] {
             "All",
@@ -325,14 +328,40 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.cmbAgeFilter);
+            this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.cmbCourseFilter);
             this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(607, 198);
+            this.groupBox4.Location = new System.Drawing.Point(607, 257);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(163, 274);
+            this.groupBox4.Size = new System.Drawing.Size(163, 148);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Filter";
+            // 
+            // cmbAgeFilter
+            // 
+            this.cmbAgeFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAgeFilter.FormattingEnabled = true;
+            this.cmbAgeFilter.Items.AddRange(new object[] {
+            "All",
+            "18-20",
+            "21-25",
+            "26-30"});
+            this.cmbAgeFilter.Location = new System.Drawing.Point(6, 103);
+            this.cmbAgeFilter.Name = "cmbAgeFilter";
+            this.cmbAgeFilter.Size = new System.Drawing.Size(138, 21);
+            this.cmbAgeFilter.TabIndex = 19;
+            this.cmbAgeFilter.SelectedIndexChanged += new System.EventHandler(this.cmbAgeFilter_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 13);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Age:";
             // 
             // frmMain
             // 
@@ -394,5 +423,7 @@
         private System.Windows.Forms.ComboBox cmbCourseFilter;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.ComboBox cmbAgeFilter;
+        private System.Windows.Forms.Label label6;
     }
 }

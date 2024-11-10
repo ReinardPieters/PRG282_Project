@@ -60,6 +60,48 @@ namespace PRG282Project.BusinessProcess
             
         }
 
+        public List<Student> FilterAge(int index)
+        {
+            List<Student> allStudents = GetStudents();
+
+            List<Student> filteredStudents = new List<Student>();
+
+            switch (index)
+            {
+                case 0:
+                    return allStudents;
+                case 1:
+                    foreach (Student student in allStudents)
+                    {
+                        if (student.Age > 18 && student.Age < 21)
+                        {
+                            filteredStudents.Add(student);
+                        }
+                    }
+                    return filteredStudents;
+                case 2:
+                    foreach (Student student in allStudents)
+                    {
+                        if (student.Age > 20 && student.Age < 26)
+                        {
+                            filteredStudents.Add(student);
+                        }
+                    }
+                    return filteredStudents;
+                case 3:
+                    foreach (Student student in allStudents)
+                    {
+                        if (student.Age > 25 && student.Age < 31)
+                        {
+                            filteredStudents.Add(student);
+                        }
+                    }
+                    return filteredStudents;
+                default:
+                    return allStudents;
+            }
+        }
+
         public List<Student> GetStudents()
         {
             return dataHandler.LoadStudents();

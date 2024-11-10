@@ -15,6 +15,8 @@ namespace PRG282Project.BusinessProcess
         {
             dataHandler = new StudentsDatahandler(filePath);
         }
+
+        //Searches students based on their ID
         public List<Student> SearchID(int ID)
         {
             List<Student> allStudents = GetStudents();
@@ -24,6 +26,7 @@ namespace PRG282Project.BusinessProcess
             return searchedStudents;
 
         }
+        //Searches students based on their name
         public List<Student> SearchName(string name) 
         {
             List<Student> allStudents = GetStudents();

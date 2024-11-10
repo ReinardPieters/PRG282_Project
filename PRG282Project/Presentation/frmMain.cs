@@ -103,15 +103,15 @@ namespace PRG282Project.Presentation
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e) // method for the delete button on the form.
         {
             try
             {
                 int ID = int.Parse(txtStudentID.Text);
                 
-                studentManager.DeleteStudent(ID);
+                studentManager.DeleteStudent(ID); //calling the  delete method that was created in studentmanager.
 
-                Log log = new Log(CurrentUser, $"Deleted student ID: {ID} @ ");
+                Log log = new Log(CurrentUser, $"Deleted student ID: {ID} @ ");// Event
 
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;
@@ -123,7 +123,7 @@ namespace PRG282Project.Presentation
             }
         }
 
-        private void btnAddStudent_Click(object sender, EventArgs e)
+        private void btnAddStudent_Click(object sender, EventArgs e) // method for the add student button.
         {
             try
             {
@@ -132,10 +132,10 @@ namespace PRG282Project.Presentation
                 int age = int.Parse(txtAge.Text);
                 string course = txtCourse.Text;
 
-                Log log = new Log(CurrentUser, $"Inserted student ID: {ID} @ ");
-                studentManager.InsertStudent(ID, Name, age, course);
+                Log log = new Log(CurrentUser, $"Inserted student ID: {ID} @ ");// Event
+                studentManager.InsertStudent(ID, Name, age, course);// calling our insert method that was created in studentmanager
                 List<Student> students = studentManager.GetStudents();
-                dgvStudents.DataSource = students;
+                dgvStudents.DataSource = students;// adding to the datagridview
             }
             catch(Exception ex)
             {

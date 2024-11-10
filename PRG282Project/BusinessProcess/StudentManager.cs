@@ -179,11 +179,11 @@ namespace PRG282Project.BusinessProcess
                 MessageBox.Show(ex.Message);
             }
         }
-        public void DeleteStudent(int id)
+        public void DeleteStudent(int id) // method for when you want to delete a student
         {
             try
             {
-                if(id <= 0)
+                if(id <= 0) // input validation
                 {
                     MessageBox.Show("Please enter a valid and positive Student ID!");
                     return;
@@ -208,10 +208,10 @@ namespace PRG282Project.BusinessProcess
                 MessageBox.Show("Error could not delete that student!");
             }
         }
-        public void InsertStudent(int id, string name, int age, string course)
+        public void InsertStudent(int id, string name, int age, string course) //method for when inserting a new student
         {
             try
-            {
+            {    //input validation for the textboxes
                 if(id <= 0)
                 {
                     MessageBox.Show("Please enter a valid, positive Student ID!");

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\user-pc\\documents\\belgium\\second year\\prg 282\\project\\prg282_project\\prg282project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:presentation\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|c:\\users\\user-pc\\documents\\belgium\\second year\\prg 282\\project\\prg282_project\\prg282project\\businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|solutionrelative:businessprocess\\studentmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{000983C0-BC2F-44B3-AEF6-CE7D139847DB}|PRG282Project.csproj|C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\presentation\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "frmMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
               "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
@@ -130,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frmMain.cs",
               "DocumentMoniker": "C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\Presentation\\frmMain.cs",
               "RelativeDocumentMoniker": "Presentation\\frmMain.cs",
@@ -138,18 +138,17 @@
               "RelativeToolTip": "Presentation\\frmMain.cs",
               "ViewState": "AgIAALgAAAAAAAAAAAAjwMkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T15:33:40.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T15:33:40.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "StudentManager.cs",
               "DocumentMoniker": "C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeDocumentMoniker": "BusinessProcess\\StudentManager.cs",
               "ToolTip": "C:\\Users\\user-pc\\Documents\\Belgium\\Second Year\\PRG 282\\Project\\PRG282_Project\\PRG282Project\\BusinessProcess\\StudentManager.cs",
               "RelativeToolTip": "BusinessProcess\\StudentManager.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAqwCUAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAUwIgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T15:32:54.987Z",
               "EditorCaption": ""

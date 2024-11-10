@@ -147,6 +147,12 @@ namespace PRG282Project.BusinessProcess
 
                 }
 
+                if (name == "" || course == "")
+                {
+                    MessageBox.Show("All fields must be filled in.");
+                    return;
+                }
+
                 foreach (Student student in students)
                 {
                     if (student.StudentID == id)

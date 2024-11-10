@@ -15,7 +15,7 @@
 15,Liam,28,DIT
 16,Mia,23,BCOMP
 17,Noah,20,BIT
-18,Olivia,21,CIT
+18,Olivia,21,BCOMP
 19,Peter,27,DIT
 20,Quinn,24,BCOMP
 21,Ruby,19,BIT

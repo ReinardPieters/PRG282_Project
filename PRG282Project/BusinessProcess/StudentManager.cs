@@ -107,7 +107,7 @@ namespace PRG282Project.BusinessProcess
             return dataHandler.LoadStudents();
         }
 
-        public float getAverageMark()
+        public float getAverageAge()
         {
             int totalAge = 0;
             int count = 0;

@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 
 namespace PRG282Project.DataHandler
@@ -17,8 +18,14 @@ namespace PRG282Project.DataHandler
         {
             this.filePath = filePath;
         }
+        public void WriteSummery(string total,string averageAge,string path)
+        {
+            string summery = $"Total Students: {total}. Average Age of students : {averageAge} {DateTime.Now}{Environment.NewLine}";
+            File.AppendAllText(path, summery);
 
-        public List<Student> LoadStudents()
+            MessageBox.Show("Added summary to summary.txt");   
+        }
+        public List<Student> LoadStudents() 
         {
             var students = new List<Student>();
 

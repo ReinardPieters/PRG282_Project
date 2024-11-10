@@ -15,6 +15,8 @@ namespace PRG282Project.BusinessProcess
         {
             dataHandler = new StudentsDatahandler(filePath);
         }
+
+        //Searches students based on their ID
         public List<Student> SearchID(int ID)
         {
             List<Student> allStudents = GetStudents();
@@ -24,6 +26,7 @@ namespace PRG282Project.BusinessProcess
             return searchedStudents;
 
         }
+        //Searches students based on their name
         public List<Student> SearchName(string name) 
         {
             List<Student> allStudents = GetStudents();
@@ -47,6 +50,7 @@ namespace PRG282Project.BusinessProcess
             }
             else
             {
+                //Only getting the students with the specified course
                 foreach (Student student in allStudents)
                 {
                     if (student.Course == course)
@@ -66,10 +70,12 @@ namespace PRG282Project.BusinessProcess
 
             List<Student> filteredStudents = new List<Student>();
 
+            //Only getting students with the specified age
             switch (index)
             {
                 case 0:
                     return allStudents;
+                    //Age less than 20
                 case 1:
                     foreach (Student student in allStudents)
                     {
@@ -79,6 +85,7 @@ namespace PRG282Project.BusinessProcess
                         }
                     }
                     return filteredStudents;
+                    //Age between 21 and 25
                 case 2:
                     foreach (Student student in allStudents)
                     {
@@ -88,6 +95,7 @@ namespace PRG282Project.BusinessProcess
                         }
                     }
                     return filteredStudents;
+                    //Age between 26 and 30
                 case 3:
                     foreach (Student student in allStudents)
                     {
@@ -134,6 +142,7 @@ namespace PRG282Project.BusinessProcess
                 bool nameOnlyLetters = name.All(char.IsLetter);
                 bool courseOnlyLetters = course.All(char.IsLetter);
 
+                //Input validation
                 if (id < 1)
                 {
                     MessageBox.Show("ID cannot be 0 or negative. Please try again.");
@@ -153,10 +162,18 @@ namespace PRG282Project.BusinessProcess
                     return;
                 }
 
+                if (age < 19)
+                {
+                    MessageBox.Show("Please enter a valid age.");
+                    return;
+                }
+
+                //Finding the student with the correct ID
                 foreach (Student student in students)
                 {
                     if (student.StudentID == id)
                      {
+                        //Changing values to new values
                         student.Name = name;
                         student.Course = course;
                         student.Age = age;
@@ -164,9 +181,11 @@ namespace PRG282Project.BusinessProcess
                         break;
                     }
                 }
+                //Displaying message if ID does not exist
                 if (!found)
                 {
                     MessageBox.Show("Student ID does not exist");
+                //Writing the updated student information to the textfile
                 } else
                 {
                     dataHandler.WriteStudents(students);

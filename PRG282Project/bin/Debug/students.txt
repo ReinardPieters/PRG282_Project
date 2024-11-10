@@ -1,5 +1,5 @@
 1,Reinard,22,BCOMP
-2,Markus,20,BCOMP
+2,Markus,20,BIT
 3,Bob,19,BCOMP
 4,Alice,22,BCOMP
 5,Brian,24,BIT

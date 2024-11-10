@@ -39,13 +39,17 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblCurrentUser = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtDetail = new System.Windows.Forms.TextBox();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.lblDetail = new System.Windows.Forms.Label();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
+            this.txtDetail = new System.Windows.Forms.TextBox();
+            this.cmbCourseFilter = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnLogout
@@ -133,7 +137,7 @@
             this.dgvStudents.Location = new System.Drawing.Point(12, 198);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.RowHeadersWidth = 100;
-            this.dgvStudents.Size = new System.Drawing.Size(758, 274);
+            this.dgvStudents.Size = new System.Drawing.Size(589, 274);
             this.dgvStudents.TabIndex = 9;
             this.dgvStudents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellClick);
             // 
@@ -266,12 +270,14 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Search";
             // 
-            // txtDetail
+            // lblDetail
             // 
-            this.txtDetail.Location = new System.Drawing.Point(6, 72);
-            this.txtDetail.Name = "txtDetail";
-            this.txtDetail.Size = new System.Drawing.Size(146, 20);
-            this.txtDetail.TabIndex = 15;
+            this.lblDetail.AutoSize = true;
+            this.lblDetail.Location = new System.Drawing.Point(6, 56);
+            this.lblDetail.Name = "lblDetail";
+            this.lblDetail.Size = new System.Drawing.Size(40, 13);
+            this.lblDetail.TabIndex = 17;
+            this.lblDetail.Text = "Detail: ";
             // 
             // cbCategory
             // 
@@ -286,20 +292,54 @@
             this.cbCategory.Text = "Select Category";
             this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
-            // lblDetail
+            // txtDetail
             // 
-            this.lblDetail.AutoSize = true;
-            this.lblDetail.Location = new System.Drawing.Point(6, 56);
-            this.lblDetail.Name = "lblDetail";
-            this.lblDetail.Size = new System.Drawing.Size(40, 13);
-            this.lblDetail.TabIndex = 17;
-            this.lblDetail.Text = "Detail: ";
+            this.txtDetail.Location = new System.Drawing.Point(6, 72);
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.Size = new System.Drawing.Size(146, 20);
+            this.txtDetail.TabIndex = 15;
+            // 
+            // cmbCourseFilter
+            // 
+            this.cmbCourseFilter.FormattingEnabled = true;
+            this.cmbCourseFilter.Items.AddRange(new object[] {
+            "All",
+            "BCOMP",
+            "BIT",
+            "CIT",
+            "DIT"});
+            this.cmbCourseFilter.Location = new System.Drawing.Point(6, 43);
+            this.cmbCourseFilter.Name = "cmbCourseFilter";
+            this.cmbCourseFilter.Size = new System.Drawing.Size(138, 21);
+            this.cmbCourseFilter.TabIndex = 17;
+            this.cmbCourseFilter.SelectedIndexChanged += new System.EventHandler(this.cmbCourseFilter_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Course:";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.cmbCourseFilter);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Location = new System.Drawing.Point(607, 198);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(163, 274);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Filter";
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(817, 588);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.lblCurrentUser);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -317,6 +357,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,5 +391,8 @@
         private System.Windows.Forms.TextBox txtDetail;
         private System.Windows.Forms.ComboBox cbCategory;
         private System.Windows.Forms.Label lblDetail;
+        private System.Windows.Forms.ComboBox cmbCourseFilter;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }

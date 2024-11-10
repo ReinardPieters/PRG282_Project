@@ -8,3 +8,8 @@ Markus : Updated student ID: 2 @  2024/11/08 11:28:22
 Markus : Updated student ID: -2 @  2024/11/08 11:40:10
 Markus : Updated student ID: 2 @  2024/11/08 11:40:22
 Markus : Updated student ID: 2 @  2024/11/08 11:40:35
+Markus : Inserted student ID: -5 @  2024/11/09 17:10:55
+Markus : Inserted student ID: 3 @  2024/11/09 17:11:12
+Markus : Inserted student ID: 4 @  2024/11/09 17:11:18
+Markus : Deleted student ID: 4 @  2024/11/09 17:11:31
+Markus : Deleted student ID: -3 @  2024/11/09 17:11:36

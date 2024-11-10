@@ -52,7 +52,7 @@ namespace PRG282Project.Presentation
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             string name = txtStudentName.Text;
-            string course = txtCourse.Text;
+            string course = cmbCourse.Text;
 
             try
             {
@@ -98,7 +98,7 @@ namespace PRG282Project.Presentation
                 txtStudentID.Text = row.Cells[0].Value.ToString();
                 txtStudentName.Text = row.Cells[1].Value.ToString();
                 txtAge.Text = row.Cells[2].Value.ToString();
-                txtCourse.Text = row.Cells[3].Value.ToString();
+                cmbCourse.SelectedItem = row.Cells[3].Value.ToString();
 
             }
         }
@@ -130,7 +130,7 @@ namespace PRG282Project.Presentation
                 int ID = int.Parse(txtStudentID.Text);
                 string Name = txtStudentName.Text;
                 int age = int.Parse(txtAge.Text);
-                string course = txtCourse.Text;
+                string course = cmbCourse.Text;
 
                 Log log = new Log(CurrentUser, $"Inserted student ID: {ID} @ ");
                 studentManager.InsertStudent(ID, Name, age, course);

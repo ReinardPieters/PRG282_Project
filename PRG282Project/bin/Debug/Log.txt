@@ -23,3 +23,6 @@ Markus : Updated student ID: 2 @  2024/11/10 15:42:08
 Markus : Updated student ID: 2 @  2024/11/10 15:43:58
 Markus : Updated student ID: 2 @  2024/11/10 15:44:05
 Markus : Updated student ID: 2 @  2024/11/10 15:44:44
+Markus : Updated student ID: 2 @  2024/11/10 15:54:51
+Markus : Inserted student ID: 24 @  2024/11/10 15:55:11
+Markus : Deleted student ID: 24 @  2024/11/10 15:55:26

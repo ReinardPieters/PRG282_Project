@@ -21,7 +21,6 @@
             this.txtStudentID = new System.Windows.Forms.TextBox();
             this.txtStudentName = new System.Windows.Forms.TextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
-            this.txtCourse = new System.Windows.Forms.TextBox();
             this.btnViewAll = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmbAgeFilter = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cmbCourse = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -84,13 +84,6 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(222, 20);
             this.txtAge.TabIndex = 3;
-            // 
-            // txtCourse
-            // 
-            this.txtCourse.Location = new System.Drawing.Point(54, 86);
-            this.txtCourse.Name = "txtCourse";
-            this.txtCourse.Size = new System.Drawing.Size(222, 20);
-            this.txtCourse.TabIndex = 4;
             // 
             // btnViewAll
             // 
@@ -164,6 +157,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.cmbCourse);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -172,7 +166,6 @@
             this.groupBox1.Controls.Add(this.txtStudentID);
             this.groupBox1.Controls.Add(this.txtStudentName);
             this.groupBox1.Controls.Add(this.txtAge);
-            this.groupBox1.Controls.Add(this.txtCourse);
             this.groupBox1.Controls.Add(this.btnUpdate);
             this.groupBox1.Controls.Add(this.btnDelete);
             this.groupBox1.Location = new System.Drawing.Point(221, 28);
@@ -363,6 +356,20 @@
             this.label6.TabIndex = 20;
             this.label6.Text = "Age:";
             // 
+            // cmbCourse
+            // 
+            this.cmbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCourse.FormattingEnabled = true;
+            this.cmbCourse.Items.AddRange(new object[] {
+            "BCOMP",
+            "BIT",
+            "CIT",
+            "DIT"});
+            this.cmbCourse.Location = new System.Drawing.Point(54, 85);
+            this.cmbCourse.Name = "cmbCourse";
+            this.cmbCourse.Size = new System.Drawing.Size(222, 21);
+            this.cmbCourse.TabIndex = 13;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,7 +406,6 @@
         private System.Windows.Forms.TextBox txtStudentID;
         private System.Windows.Forms.TextBox txtStudentName;
         private System.Windows.Forms.TextBox txtAge;
-        private System.Windows.Forms.TextBox txtCourse;
         private System.Windows.Forms.Button btnViewAll;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
@@ -425,5 +431,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.ComboBox cmbAgeFilter;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbCourse;
     }
 }

@@ -24,6 +24,7 @@ namespace PRG282Project.Presentation
             
             InitializeComponent();
             string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "students.txt");
+            
             studentManager = new StudentManager(filePath);
             CurrentUser = user;
         }
@@ -80,8 +81,13 @@ namespace PRG282Project.Presentation
 
         private void btnGenerateReport_Click(object sender, EventArgs e)
         {
-            lblAverageAge.Text = $"Average Age: {studentManager.getAverageMark()}";
+            string summaryPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "summary.txt");
+            lblAverageAge.Text = $"Average Age: {studentManager.getAverageAge()}";
             lblTotalStudents.Text = $"Total students: {studentManager.getTotalStudents()}";
+            StudentsDatahandler studentsDatahandler = new StudentsDatahandler(summaryPath);
+
+            studentsDatahandler.WriteSummery(Convert.ToString(studentManager.getTotalStudents()), Convert.ToString(studentManager.getAverageAge()),summaryPath);
+
         }
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)

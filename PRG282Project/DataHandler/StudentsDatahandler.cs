@@ -18,6 +18,8 @@ namespace PRG282Project.DataHandler
         {
             this.filePath = filePath;
         }
+
+        //writes summary data to the summary.txt file
         public void WriteSummery(string total,string averageAge,string path)
         {
             string summery = $"Total Students: {total}. Average Age of students : {averageAge} {DateTime.Now}{Environment.NewLine}";
@@ -25,6 +27,7 @@ namespace PRG282Project.DataHandler
 
             MessageBox.Show("Added summary to summary.txt");   
         }
+        //loads students into an list from students.txt and returns the list
         public List<Student> LoadStudents() 
         {
             var students = new List<Student>();

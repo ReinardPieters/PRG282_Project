@@ -35,6 +35,31 @@ namespace PRG282Project.BusinessProcess
             return searchedStudents;
         }
 
+        public List<Student> FilterCourse(string course)
+        {
+            List<Student> allStudents = GetStudents();
+
+            List<Student> filteredStudents = new List<Student> ();
+
+            if (course == "All")
+            {
+                return allStudents;
+            }
+            else
+            {
+                foreach (Student student in allStudents)
+                {
+                    if (student.Course == course)
+                    {
+                        filteredStudents.Add(student);
+                    }
+                }
+
+                return filteredStudents;
+            }
+            
+        }
+
         public List<Student> GetStudents()
         {
             return dataHandler.LoadStudents();

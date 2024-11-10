@@ -193,5 +193,10 @@ namespace PRG282Project.Presentation
                 lblDetail.Text = "Please select a category to seach first";
             }
         }
+
+        private void cmbCourseFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            dgvStudents.DataSource = studentManager.FilterCourse(cmbCourseFilter.SelectedItem.ToString());
+        }
     }
 }

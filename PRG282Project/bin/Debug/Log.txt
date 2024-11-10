@@ -13,3 +13,6 @@ Markus : Inserted student ID: 3 @  2024/11/09 17:11:12
 Markus : Inserted student ID: 4 @  2024/11/09 17:11:18
 Markus : Deleted student ID: 4 @  2024/11/09 17:11:31
 Markus : Deleted student ID: -3 @  2024/11/09 17:11:36
+Test : Inserted student ID: 24 @  10/11/2024 15:11:45
+Test : Updated student ID: 24 @  10/11/2024 15:11:53
+Test : Deleted student ID: 24 @  10/11/2024 15:12:00

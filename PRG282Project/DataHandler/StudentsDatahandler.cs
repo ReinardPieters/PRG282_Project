@@ -56,18 +56,20 @@ namespace PRG282Project.DataHandler
 
         public void WriteStudents(List<Student> students)
         {
+            //Check if the text file exists
             if (!File.Exists(filePath))
             {
                 throw new FileNotFoundException("Student file not found.");
             }
 
             List<string> details = new List<string>();
-
+            //Adding all students in list using their ToString method
             foreach (Student student in students)
             {
                 details.Add(student.ToString());
             }
             
+            //Writing to the text file
             File.WriteAllLines(filePath, details);
         }
 

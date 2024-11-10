@@ -59,11 +59,12 @@ namespace PRG282Project.Presentation
                 int ID = int.Parse(txtStudentID.Text);
                 int age = int.Parse(txtAge.Text);
 
-
+                //Calling update method
                 studentManager.UpdateStudent(ID, name, age, course);
 
                 Log log = new Log(CurrentUser, $"Updated student ID: {ID} @ ");
 
+                //Getting the updated list from the updated text file
                 List<Student> students = studentManager.GetStudents();
                 dgvStudents.DataSource = students;
             }
@@ -92,6 +93,7 @@ namespace PRG282Project.Presentation
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            //Filling information into textboxes when clicking a row
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dgvStudents.Rows[e.RowIndex];
@@ -202,11 +204,13 @@ namespace PRG282Project.Presentation
 
         private void cmbCourseFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Calling the filter method and updating the datasource
             dgvStudents.DataSource = studentManager.FilterCourse(cmbCourseFilter.SelectedItem.ToString());
         }
 
         private void cmbAgeFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Calling the filter method and updating the datasource
             dgvStudents.DataSource = studentManager.FilterAge(cmbAgeFilter.SelectedIndex);
 
         }
